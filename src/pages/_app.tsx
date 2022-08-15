@@ -4,9 +4,22 @@ import type { AppRouter } from "../server/router";
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
 import "../styles/globals.css";
+import Head from "next/head";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>They&apos;re a 10 but....</title>
+        <meta
+          name="description"
+          content="A rating game based off the popular TikTok trend, they're a 10 but...."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+        <Component {...pageProps} />{" "}
+    </>
+  );
 };
 
 const getBaseUrl = () => {

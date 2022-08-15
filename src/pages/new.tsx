@@ -27,10 +27,11 @@ export default function New(){
             <div className="flex flex-col items-center justify-start w-5/6">
                 <h1 className="text-4xl p-2 font-bold">New Prompt</h1>
                 <h2 className="text-2xl">They&apos;re a 10, but {prompt || "..."}</h2>
-                <div className="my-10 w-full flex gap-2 items-center justify-center">
+                <div className="my-10 w-full md:w-3/4 flex gap-2 items-center justify-center">
                     <input
                         type="text"
                         value={prompt}
+                        placeholder={"they are stinky"}
                         onChange={(e) => (setPrompt(e.target.value), setSuccess(false))}
                         onKeyPress={handleKeyPress}
                         className="border-2 p-2 w-full"
@@ -39,7 +40,7 @@ export default function New(){
                         Submit
                     </button>
                 </div>
-                {success && <h2>Successfull added!</h2>}
+                {success && <h2 className="text-green-500 font-semibold">Successfull added!</h2>}
                 <button className="bg-sky-500 shadow-xl hover:scale-105 text-white font-bold rounded-[40px]  text-2xl p-4">
           <Link href="/">
             <a className="">

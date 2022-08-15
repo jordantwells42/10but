@@ -54,14 +54,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>They&apos;re a 10 but....</title>
-        <meta
-          name="description"
-          content="A rating game based off the popular TikTok trend, they're a 10 but...."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
 
       <div className="flex py-20 h-screen w-full flex-col bg-gray-50 text-gray-800 items-center justify-center">
         <div className="shadow-xl bg-sky-600 rounded-[40px] text-white p-8 w-3/4  items-center justify-center">
