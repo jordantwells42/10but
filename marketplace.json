@@ -1,0 +1,22 @@
+{
+    "app_name": "They're a 10 but", 
+    "description": "The popular TikTok trend `They're a 10 but...` implemented with Next.js and Redis",
+    "hidden": "false",
+    "rank": "21",
+    "type": "Full App",
+    "contributed_by": "Community",
+    "repo_url": "https://github.com/jordantwells42/10but",
+    "download_url": "https://github.com/jordantwells42/10but/archive/refs/heads/main.zip",
+    "hosted_url": "https://10but.jordantwells.com",
+    "quick_deploy": "false", 
+    "deploy_buttons": [],
+    "language": ["JavaScript", "TypeScript"],
+    "redis_commands": ["LPUSH", "LRANGE", "JSON.SET", "JSON.GET", "JSON.ARRAPPEND"],
+    "redis_features": ["caching"],
+    "redis_modules": ["RedisJSON"], 
+    "app_image_urls": ["https://user-images.githubusercontent.com/8213365/184719265-0e4711e9-ca90-4fbc-9357-ba17f8a9fc8a.png","https://user-images.githubusercontent.com/8213365/184719266-2cce8aff-f17c-4d2d-8837-025fdffdadd2.png","https://user-images.githubusercontent.com/8213365/184719264-f1bb1374-36c1-479e-9b0f-044f1f0adf43.png"], 
+    "youtube_url": "",
+    "special_tags": ["Hackathon"], 
+    "verticals": ["Technology"],
+    "markdown": "https://raw.githubusercontent.com/jordantwells42/10but/main/README.md"
+}
