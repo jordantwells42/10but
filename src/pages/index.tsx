@@ -78,12 +78,12 @@ const Home: NextPage = () => {
                 key={num}
                 className={`${
                   num <= rating ? "text-sky-500" : "text-gray-400"
-                }  rounded-[40px] hover:cursor-pointer w-12 aspect-square  items-center justify-center`}
+                }  rounded-[40px] hover:cursor-pointer h-8 md:h-10 lg:h-12 aspect-square  items-center justify-center`}
                 onClick={() => handleRatingChange(num)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
+                  className="h-8 md:h-10 lg:h-12 aspect-square"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
