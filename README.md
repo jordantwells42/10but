@@ -1,4 +1,4 @@
-# 10but
+# They're a 10 but..
 
 This website takes the popular trend of "They're a 10 but..." and turns it into a fun online game where you can see what other people think! For those unfamiliar with the trend, the basic idea is that you give someone a characteristic about someone and how attractive they are, and then they give you back what they would rate them out of 10. So for example, if someone is a 5 but they know how to use RedisJSON, then they are easily a 10/10!
 
