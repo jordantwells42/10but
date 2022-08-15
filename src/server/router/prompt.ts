@@ -7,7 +7,7 @@ const redis = new Redis(process.env.REDIS_URL as string)
 export const promptRouter = createRouter()
   .query('get-random-prompt', {
     async resolve ({}) {
-        //await redis.flushall()
+    //await redis.flushall()
       const len = await redis.llen('prompts')
       if (len == 0) {
         await redis.lpush('prompts', ...myPrompts)
@@ -35,11 +35,8 @@ let myPrompts = [
   'they put milk before their cereal',
   'they had unrestricted access to the internet at a young age',
   'they listened to Lana Del Rey as a teen',
-  'they cry on their birthday every year',
   'they forgot about their animal crossing island',
   'it’s because of inflation',
-  'they audibly gasp whenever they hear a One Direction song playing while out in public',
-  'they listen to Phoebe Bridgers at 8 am in the morning',
   'they go to Starbucks everyday',
   'they force teenagers to dig holes in the desert',
   'they hate cheese yet like everything that has cheese in it',
@@ -67,15 +64,8 @@ let myPrompts = [
   'they are 5’6”',
   'they are obsessed with Minions',
   'they recite the Pledge of Allegiance every morning',
-  'they go to church every Sunday',
   'they walk on their toes',
-  'they think menstrual pads are applied directly to the skin',
-  'they put inspirational quotes as each of their Instagram captions',
   'they carry a gallon of water at all times',
-  'they kiss their dad on the lips still',
-  'they kiss their mom on the lips still',
-  'they pool All the time',
-  'they have no ass',
   'their feet smell',
   'they’re bald',
   'they have a nice car',
@@ -104,11 +94,9 @@ let myPrompts = [
   'they have your exact sense of humor ',
   'they only wear flip flops ',
   'their apartment is spotless',
-  'they have a weirdly long pinky nail',
   'your family loves them',
   'their family loves you',
   'they never tip',
-  "they're really quiet around your friends",
   "they're a sound cloud rapper",
   'they are an amazing cook',
   'they bake little treats for you',
@@ -131,7 +119,6 @@ let myPrompts = [
   'they drink Monster energy frequently',
   'they have 1000s of unread emails',
   'they wear jean shorts religiously ',
-  'they are way too into Crypto',
   'they keep trying to sell you NFTs',
   'they act like a stock bro',
   'they need to touch grass',
