@@ -7,7 +7,7 @@ const redis = new Redis(process.env.REDIS_URL as string)
 export const promptRouter = createRouter()
   .query('get-random-prompt', {
     async resolve ({}) {
-    //await redis.flushall()
+        //await redis.flushall()
       const len = await redis.llen('prompts')
       if (len == 0) {
         await redis.lpush('prompts', ...myPrompts)

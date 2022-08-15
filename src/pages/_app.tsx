@@ -15,7 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           name="description"
           content="A rating game based off the popular TikTok trend, they're a 10 but...."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
         <Component {...pageProps} />{" "}
     </>
