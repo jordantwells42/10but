@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 md:h-10 lg:h-12 aspect-square"
+                  className="h-8   md:h-10 lg:h-12 aspect-square"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

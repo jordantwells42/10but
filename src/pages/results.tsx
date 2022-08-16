@@ -6,7 +6,7 @@ export default function Results() {
   const deltas = trpc.useQuery(["rating.get-deltas"]);
 
   return (
-    <div className="flex py-20 h-screen w-full flex-col bg-gray-50 text-gray-800 items-center justify-start">
+    <div className="flex py-20 w-full flex-col bg-gray-50 text-gray-800 items-center justify-start">
       <div className="flex flex-col items-center justify-start w-5/6">
         <h1 className="text-6xl p-2">Results</h1>
 
