@@ -27,7 +27,7 @@ export default function Results() {
                       : "text-red-500"
                   } font-bold`}
                 >
-                  {delta[1]}
+                  {Math.round(delta[1]*100)/100}
                 </h3>
               </div>
             ))}
