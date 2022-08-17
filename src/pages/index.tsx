@@ -63,7 +63,7 @@ const Home: NextPage = () => {
           </h1>
           <div className="py-3"></div>
           <h1 className="text-center font-bold italic text-4xl">
-            but {prompt?.data?.prompt}
+            but {prompt.data ? prompt?.data?.prompt : "..."}
           </h1>
         </div>
         <div className="py-10"></div>
